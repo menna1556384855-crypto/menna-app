@@ -1,22 +1,20 @@
-export default function LessonTwo() {
+import Link from 'next/link';
+
+export default function Unit2Lesson2() {
   return (
-    <div className="max-w-4xl mx-auto p-8 text-right" dir="rtl">
-      <div className="mb-6 flex items-center gap-4">
-        <span className="bg-orange-100 text-orange-700 px-4 py-1 rounded-full font-bold">الدرس 2</span>
-        <h1 className="text-3xl font-bold">التواصل غير المتزامن</h1>
-      </div>
-      
-      <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
-        <h2 className="text-xl font-bold text-orange-600 mb-4">ما هو التواصل غير المتزامن؟</h2>
-        <p className="text-lg text-slate-700 leading-relaxed mb-6">
-          هو تواصل لا يتطلب وجود الطرفين في نفس الوقت، حيث يمكن للمستلم قراءة الرسالة والرد عليها في وقت لاحق[cite: 1].
+    <div className="max-w-3xl mx-auto p-8 text-right" dir="rtl">
+      <h1 className="text-3xl font-bold text-orange-600 mb-6">التواصل غير المتزامن (Asynchronous)</h1>
+      <div className="prose prose-slate bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+        <p className="text-lg leading-relaxed mb-4">
+          هو تواصل لا يتطلب رداً فورياً، حيث يمكن للمستلم قراءته والرد عليه لاحقاً[cite: 1].
         </p>
-        
-        <h3 className="font-bold mb-3">أمثلة عليه:</h3>
-        <ul className="list-disc list-inside space-y-2 text-slate-600">
-          <li>البريد الإلكتروني (Email)[cite: 1].</li>
-          <li>الرسائل الصوتية أو الفيديو المسجلة[cite: 1].</li>
+        <h3 className="font-bold mb-2">أمثلة:</h3>
+        <ul className="list-disc list-inside mb-6">
+          <li>البريد الإلكتروني والرسائل المسجلة[cite: 1].</li>
         </ul>
+      </div>
+      <div className="mt-8">
+        <Link href="/units/unit2" className="text-blue-600 font-bold">← عودة لفهرس الوحدة</Link>
       </div>
     </div>
   );
